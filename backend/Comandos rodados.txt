@@ -1,0 +1,21 @@
+yarn add express
+
+yarn add nodemon
+
+npm install knex
+
+yarn add sqlite3
+
+npx knex init
+
+//Criando a migrations da tabela ong
+npx knex migrate:make first_migrations
+
+//rodas as migrations
+npx knex migrate:latest
+
+//criando a tabela dos casos
+npx knex migrate:make create_incidents
+
+//listado migrations
+npx knex migrate:list
